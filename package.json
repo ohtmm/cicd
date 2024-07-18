@@ -1,19 +1,19 @@
 {
+  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
     "test": "jest --coverage",
-    "test:ci": "jest --ci",
-    "cy:open": "cypress open"
+    "test:ci": "jest --ci"
   },
   "dependencies": {
-    "@sentry/nextjs": "^8.18.0",
-    "@vercel/speed-insights": "^1.0.12",
-    "next": "^13.4.19",
+    "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "server-only": "^0.0.1"
+    "server-only": "^0.0.1",
+     "cypress:open": "cypress open",
+  "cypress:run": "cypress run"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "6.1.5",
