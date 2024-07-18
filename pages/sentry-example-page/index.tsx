@@ -49,18 +49,7 @@ export default function Page() {
             margin: '18px',
           }}
           onClick={async () => {
-            await Sentry.startSpan(
-              {
-                name: 'Example Frontend Span',
-                op: 'test',
-              },
-              async () => {
-                const res = await fetch('/api/sentry-example-api');
-                if (!res.ok) {
-                  throw new Error('Sentry Example Frontend Error');
-                }
-              }
-            );
+            Sentry.captureMessage('Something went wrong', 'error');
           }}
         >
           Throw error!
