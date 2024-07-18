@@ -30,7 +30,7 @@ function Todos() {
       <button onClick={addTask} data-testid='add-task-button'>
         추가
       </button>
-      <ul>
+      <ul data-testid='task-list'>
         {tasks.map((task, index) => (
           <li key={index} data-testid={`task-${index}`}>
             {task}
