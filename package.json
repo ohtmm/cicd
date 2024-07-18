@@ -5,15 +5,15 @@
     "build": "next build",
     "start": "next start",
     "test": "jest --coverage",
-    "test:ci": "jest --ci"
+    "test:ci": "jest --ci",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
   },
   "dependencies": {
     "next": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "server-only": "^0.0.1",
-     "cypress:open": "cypress open",
-  "cypress:run": "cypress run"
+    "server-only": "^0.0.1"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "6.1.5",
